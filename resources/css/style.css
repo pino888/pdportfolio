@@ -29,7 +29,6 @@ header {
     position: fixed;
     display: flex;
     z-index: 10;
-    background-color: black;
 }
 
 .banner {
@@ -77,25 +76,37 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    height: 550px;
+    min-height: 550px;
     flex-direction: row;
 }
 
 .content h1 {
     width: 100%;
     text-align: center;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
 }
 
-.contentbox {
+.contentboxright {
     border: 1px solid violet;
     display: inline-flex;
     width: 49%;
     align-content: center;
     align-items: center;
+    background-image: url("../images/hover.jpg");
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.contentbox p {
+.contentboxleft {
+    border: 1px solid violet;
+    display: inline-flex;
+    width: 49%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentboxright p {
     padding: 8%;
 }
 
@@ -112,6 +123,6 @@ main {
 
 footer {
     border: 1px solid white;
-    text-align: right;
+    text-align: center;
     width: 100%;
 }
