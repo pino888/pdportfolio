@@ -5,7 +5,8 @@
         <title>Piotr Daniel's Portfolio</title>
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="resources/scripts/main.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="resources/scripts/main.js" defer></script>
     </head>
     <!--Website content-->
     <body>
@@ -18,21 +19,22 @@
                 <a href="index.html">Home</a>
                 <a href="#aboutme">About Me</a>
                 <a href="#projects">My Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </header>
         <!--Main Content-->
         <main>
             <div class="content" id="aboutme">
-                <h1>Welcome to my site.</h1>
+                <h1>Welcome to my site</h1>
                 <div class="contentboxleft">
-                    <img>
-                    <p>Here will be my avatar</p>
+                    <img src="./resources/images/avatar.png" id="avatar">
+                    <p id="avatarspeak">Hi there!</p>
                 </div>
                 <div class="contentboxright">
                     <p>I'm a young enthusiast who's beginning web development and programming, 
                         with a goal of becoming a professional web developer. 
                         Besides that I love listening to and making music as well as reading
-                    books.</p>
+                    books.<br>P.S Please be nice to my avatar.</p>
                 </div>
             </div>
             <div class="content" id="projects">
@@ -43,21 +45,45 @@
                     </p>
                 </div>
                 <div class="contentboxright">
-                    <div class="example">
-                        <h3>Example 1</h3>
+                    <div class="example" id="example1">
+                        <h3>Tea Cozy</h3>
+                        <a><button id="butexa1-1">Code</button></a>
+                        <a href="https://pino888.github.io/teacozy/" target="_blank"><button id="butexa1-2">Site</button></a>
                     </div>
-                    <div class="example">
+                    <div class="example" id="example2">
                         <h3>Example 2</h3>
                     </div>
-                    <div class="example">
+                    <div class="example" id="example3">
                         <h3>Example 3</h3>
                     </div>
                 </div>
             </div>
+            <div class="content" id="contact">
+                <h1>Contact me via form below</h1>
+                <form data-controller="recaptcha" id="contactform" method="POST" action="index.html">
+                    <label for="name">Name:</label><br>
+                    <input id="name" name="name" type="text">
+                    <br>
+                    <label for="email">Email:</label><br>
+                    <input id="email" name="email" type="text" required>
+                    <br>
+                    <label for="message">Your message:</label><br>
+                    <textarea id="message" name="message" rows="10" cols="50" maxlength="500"></textarea>
+                    <br>
+                    <input type="submit" value="Send" id="formsubmit">
+                </form>
+            </div>
         </main>
         <!--Footer-->
         <footer>
-            <p>Footer notes and social media tags</p>
+            <div class="footleft">
+                <img src="./resources/images/avatar.png" id="miniavatar">
+                <p id="miniavatarspeak">Just leave me alone...</p>
+            </div>
+            <div class="footright">
+                <a href="#" class="fa fa-github"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
         </footer>
     </body>
 </html>
