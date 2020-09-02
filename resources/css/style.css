@@ -128,7 +128,8 @@ main {
     width: 30%;
     height: auto;
     animation: tada;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
+    animation-delay: 1.4s;
 }
 
 /* Examples of my projects container and buttons */
