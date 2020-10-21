@@ -146,6 +146,12 @@ main {
 
 .example h3 {
     width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: min-content;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .contentboxright a {
@@ -159,7 +165,7 @@ main {
 /* Example 1 - top left corner buttons and background */
 
 #example1 {
-    background-image: url('../images/teacozy.PNG');
+    background-image: url('../images/dustron.PNG');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -199,15 +205,91 @@ main {
 }
 
 #example2 {
+    background-image: url("../images/fortune.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#butexa2-1 {
+    height: 50px;
+    width: 90px;
+    margin: 5px;
+    background-color: black;
+    opacity: 0.8;
+    color: hsl(0,0%,82.7%);
+    display: none;
+    border-radius: 5px;
+    border: 1px solid hsl(0,0%,82.7%);
+    transition-duration: 0.2s;
+}
+
+#butexa2-1:hover {
     background-color: hsl(205.7,13.7%,10%);
+}
+
+#butexa2-2 {
+    height: 50px;
+    width: 90px;
+    margin: 5px;
+    background-color: black;
+    opacity: 0.8;
+    color: hsl(0,0%,82.7%);
+    display: none;
+    border-radius: 5px;
+    border: 1px solid hsl(0,0%,82.7%);
+    transition-duration: 0.2s;
+}
+
+#butexa2-2:hover {
+    background-color: hsl(205.7,13.7%,10%);
+}
+
+#example3 {
+    background-image: url('../images/teacozy.PNG');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#example3 {
+#butexa3-1 {
+    height: 50px;
+    width: 90px;
+    margin: 5px;
+    background-color: black;
+    opacity: 0.8;
+    color: hsl(0,0%,82.7%);
+    display: none;
+    border-radius: 5px;
+    border: 1px solid hsl(0,0%,82.7%);
+    transition-duration: 0.2s;
+}
+
+#butexa3-1:hover {
     background-color: hsl(205.7,13.7%,10%);
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+#butexa3-2 {
+    height: 50px;
+    width: 90px;
+    margin: 5px;
+    background-color: black;
+    opacity: 0.8;
+    color: hsl(0,0%,82.7%);
+    display: none;
+    border-radius: 5px;
+    border: 1px solid hsl(0,0%,82.7%);
+    transition-duration: 0.2s;
+}
+
+#butexa3-2:hover {
+    background-color: hsl(205.7,13.7%,10%);
+}
+
+#contact {
+    display: block;
+    text-align: center;
+}
+
+#contact a {
+    margin: 2%;
 }
 
 /* Form and submit button style */
@@ -306,6 +388,18 @@ footer {
     #butexa1-2 {
         display: block;
     }
+    #butex2-1 {
+        display: block;
+    }
+    #butexa2-2 {
+        display: block;
+    }
+    #butexa3-1 {
+        display: block;
+    }
+    #butexa3-2 {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -342,6 +436,18 @@ footer {
     #butexa1-2 {
         display: block;
     }
+    #butex2-1 {
+        display: block;
+    }
+    #butexa2-2 {
+        display: block;
+    }
+    #butexa3-1 {
+        display: block;
+    }
+    #butexa3-2 {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -363,5 +469,20 @@ footer {
     }
     #butexa1-2 {
         display: block;
+    }
+    #butex2-1 {
+        display: block;
+    }
+    #butexa2-2 {
+        display: block;
+    }
+    #butexa3-1 {
+        display: block;
+    }
+    #butexa3-2 {
+        display: block;
+    }
+    .footleft {
+        width: 70%;
     }
 }

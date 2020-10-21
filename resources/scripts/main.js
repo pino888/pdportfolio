@@ -1,19 +1,49 @@
-let buttone1 = document.getElementById('butexa1-1');
-let buttone2 = document.getElementById('butexa1-2');
+let buttone1_1 = document.getElementById('butexa1-1');
+let buttone1_2 = document.getElementById('butexa1-2');
+let buttone2_1 = document.getElementById('butexa2-1');
+let buttone2_2 = document.getElementById('butexa2-2');
+let buttone3_1 = document.getElementById('butexa3-1');
+let buttone3_2 = document.getElementById('butexa3-2');
 let examplebox1 = document.getElementById('example1');
+let examplebox2 = document.getElementById('example2');
+let examplebox3 = document.getElementById('example3');
 
 const hoverbutton1 = () => {
-    buttone1.style.display = 'block';
-    buttone2.style.display = 'block';
+    buttone1_1.style.display = 'block';
+    buttone1_2.style.display = 'block';
 }
 
 const nohoverbutton1 = () => {
-    buttone1.style.display = 'none';
-    buttone2.style.display = 'none';
+    buttone1_1.style.display = 'none';
+    buttone1_2.style.display = 'none';
+}
+
+const hoverbutton2 = () => {
+    buttone2_1.style.display = 'block';
+    buttone2_2.style.display = 'block';
+}
+
+const nohoverbutton2 = () => {
+    buttone2_1.style.display = 'none';
+    buttone2_2.style.display = 'none';
+}
+
+const hoverbutton3 = () => {
+    buttone3_1.style.display = 'block';
+    buttone3_2.style.display = 'block';
+}
+
+const nohoverbutton3 = () => {
+    buttone3_1.style.display = 'none';
+    buttone3_2.style.display = 'none';
 }
 
 examplebox1.onmouseover = hoverbutton1;
 examplebox1.onmouseout = nohoverbutton1;
+examplebox2.onmouseover = hoverbutton2;
+examplebox2.onmouseout = nohoverbutton2;
+examplebox3.onmouseover = hoverbutton3;
+examplebox3.onmouseout = nohoverbutton3;
 
 
 let avatartext = document.getElementById('avatarspeak');
