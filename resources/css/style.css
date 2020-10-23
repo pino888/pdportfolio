@@ -440,6 +440,12 @@ footer {
     #butexa3-2 {
         display: block;
     }
+    #butexa4-1 {
+        display: block;
+    }
+    #butexa4-2 {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -488,6 +494,12 @@ footer {
     #butexa3-2 {
         display: block;
     }
+    #butexa4-1 {
+        display: block;
+    }
+    #butexa4-2 {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -520,6 +532,12 @@ footer {
         display: block;
     }
     #butexa3-2 {
+        display: block;
+    }
+    #butexa4-1 {
+        display: block;
+    }
+    #butexa4-2 {
         display: block;
     }
     .footleft {
