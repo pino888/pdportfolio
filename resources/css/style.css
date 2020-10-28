@@ -422,7 +422,7 @@ footer {
         border-radius: 0px 0px 5px 5px;
         text-align: center;
     }
-    /*#butexa1-1 {
+    #butexa1-1 {
         display: block;
     }
     #butexa1-2 {
@@ -445,7 +445,7 @@ footer {
     }
     #butexa4-2 {
         display: block;
-    }*/
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -476,7 +476,7 @@ footer {
         border-radius: 0px 0px 5px 5px;
         text-align: center;
     }
-    /*#butexa1-1 {
+    #butexa1-1 {
         display: block;
     }
     #butexa1-2 {
@@ -499,7 +499,7 @@ footer {
     }
     #butexa4-2 {
         display: block;
-    }*/
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -516,7 +516,7 @@ footer {
     .contentboxleft {
         flex-direction: column;
     }
-    /*#butexa1-1 {
+    #butexa1-1 {
         display: block;
     }
     #butexa1-2 {
@@ -539,7 +539,7 @@ footer {
     }
     #butexa4-2 {
         display: block;
-    }*/
+    }
     .footleft {
         width: 70%;
     }
