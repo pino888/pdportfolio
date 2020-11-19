@@ -6,10 +6,13 @@ let buttone3_1 = document.getElementById('butexa3-1');
 let buttone3_2 = document.getElementById('butexa3-2');
 let buttone4_1 = document.getElementById('butexa4-1');
 let buttone4_2 = document.getElementById('butexa4-2');
+let buttone5_1 = document.getElementById('butexa5-1');
+let buttone5_2 = document.getElementById('butexa5-2');
 let examplebox1 = document.getElementById('example1');
 let examplebox2 = document.getElementById('example2');
 let examplebox3 = document.getElementById('example3');
 let examplebox4 = document.getElementById('example4');
+let examplebox5 = document.getElementById('example5');
 
 const hoverbutton1 = () => {
     buttone1_1.style.display = 'block';
@@ -51,6 +54,16 @@ const nohoverbutton4 = () => {
     buttone4_2.style.display = 'none';
 }
 
+const hoverbutton5 = () => {
+    buttone5_1.style.display = 'block';
+    buttone5_2.style.display = 'block';
+}
+
+const nohoverbutton5 = () => {
+    buttone5_1.style.display = 'none';
+    buttone5_2.style.display = 'none';
+}
+
 examplebox1.onmouseover = hoverbutton1;
 examplebox1.onmouseout = nohoverbutton1;
 examplebox2.onmouseover = hoverbutton2;
@@ -59,6 +72,8 @@ examplebox3.onmouseover = hoverbutton3;
 examplebox3.onmouseout = nohoverbutton3;
 examplebox4.onmouseover = hoverbutton4;
 examplebox4.onmouseout = nohoverbutton4;
+examplebox5.onmouseover = hoverbutton5;
+examplebox5.onmouseout = nohoverbutton5;
 
 
 let avatartext = document.getElementById('avatarspeak');
