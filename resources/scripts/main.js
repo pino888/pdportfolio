@@ -1,79 +1,22 @@
-let buttone1_1 = document.getElementById('butexa1-1');
-let buttone1_2 = document.getElementById('butexa1-2');
-let buttone2_1 = document.getElementById('butexa2-1');
-let buttone2_2 = document.getElementById('butexa2-2');
-let buttone3_1 = document.getElementById('butexa3-1');
-let buttone3_2 = document.getElementById('butexa3-2');
-let buttone4_1 = document.getElementById('butexa4-1');
-let buttone4_2 = document.getElementById('butexa4-2');
-let buttone5_1 = document.getElementById('butexa5-1');
-let buttone5_2 = document.getElementById('butexa5-2');
-let examplebox1 = document.getElementById('example1');
-let examplebox2 = document.getElementById('example2');
-let examplebox3 = document.getElementById('example3');
-let examplebox4 = document.getElementById('example4');
-let examplebox5 = document.getElementById('example5');
+let example = document.querySelectorAll('.example');
 
-const hoverbutton1 = () => {
-    buttone1_1.style.display = 'block';
-    buttone1_2.style.display = 'block';
-}
 
-const nohoverbutton1 = () => {
-    buttone1_1.style.display = 'none';
-    buttone1_2.style.display = 'none';
-}
-
-const hoverbutton2 = () => {
-    buttone2_1.style.display = 'block';
-    buttone2_2.style.display = 'block';
-}
-
-const nohoverbutton2 = () => {
-    buttone2_1.style.display = 'none';
-    buttone2_2.style.display = 'none';
-}
-
-const hoverbutton3 = () => {
-    buttone3_1.style.display = 'block';
-    buttone3_2.style.display = 'block';
-}
-
-const nohoverbutton3 = () => {
-    buttone3_1.style.display = 'none';
-    buttone3_2.style.display = 'none';
-}
-
-const hoverbutton4 = () => {
-    buttone4_1.style.display = 'block';
-    buttone4_2.style.display = 'block';
-}
-
-const nohoverbutton4 = () => {
-    buttone4_1.style.display = 'none';
-    buttone4_2.style.display = 'none';
-}
-
-const hoverbutton5 = () => {
-    buttone5_1.style.display = 'block';
-    buttone5_2.style.display = 'block';
-}
-
-const nohoverbutton5 = () => {
-    buttone5_1.style.display = 'none';
-    buttone5_2.style.display = 'none';
-}
-
-examplebox1.onmouseover = hoverbutton1;
-examplebox1.onmouseout = nohoverbutton1;
-examplebox2.onmouseover = hoverbutton2;
-examplebox2.onmouseout = nohoverbutton2;
-examplebox3.onmouseover = hoverbutton3;
-examplebox3.onmouseout = nohoverbutton3;
-examplebox4.onmouseover = hoverbutton4;
-examplebox4.onmouseout = nohoverbutton4;
-examplebox5.onmouseover = hoverbutton5;
-examplebox5.onmouseout = nohoverbutton5;
+example.forEach(item => {
+    item.addEventListener("mouseenter", event => {
+        item.children[1].style.display = 'flex';
+        item.children[2].style.display = 'flex';
+        item.style.transform = 'translate(3px, 3px)';
+        item.style.boxShadow = 'none';
+    })
+})
+example.forEach(item => {
+    item.addEventListener("mouseleave", event => {
+        item.children[1].style.display = 'none';
+        item.children[2].style.display = 'none';
+        item.style.transform = 'translate(0px, 0px)';
+        item.style.boxShadow = '5px 5px 10px';
+    })
+})
 
 
 let avatartext = document.getElementById('avatarspeak');
@@ -109,3 +52,8 @@ const clickavatar = () => {
 }
 
 avatarpic.onmouseup = clickavatar;
+
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }

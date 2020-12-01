@@ -18,8 +18,7 @@
                 <h1>Piotr Daniel</h1>
             </div>
             <div class="menu">    
-                <a href="index.html">Home</a>
-                <a href="#aboutme">About Me</a>
+                <a onclick="topFunction()">Home</a>
                 <a href="#projects">My Projects</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -27,81 +26,54 @@
         <!--Main Content-->
         <main>
             <div class="content" id="aboutme">
-                <h1>Welcome to my site</h1>
-                <div class="contentboxleft">
-                    <img src="./resources/images/avatar.png" id="avatar">
-                    <p id="avatarspeak">Hi there!</p>
-                </div>
-                <div class="contentboxright">
-                    <p>I'm an enthusiastic, self-thaught beginner web developer, 
-                        exploring the world of programming. My goal is to
-                        expand the knowledge and experience to become a 
-                        professional web developer and to deliver some 
-                        interactive advetures for the users.
-                        <br>
-                        <br>
-                        Besides that I love listening to and making music as well as reading
-                        books.
-                        <br>
-                        <br>P.S. Please be nice to my avatar.</p>
-                </div>
+                <img src="./resources/images/avatar.png" id="avatar">
+                <p id="avatarspeak">Welcome to my site!</p>
             </div>
+            <h1>My projects</h1>
             <div class="content" id="projects">
-                <h1>Here are my projects</h1>
-                <div class="contentboxleft">
-                    <p>Here you can find my latest projects, which were created to test variety of new skills and for a different
-                    purposes. You can access completed projects
-                    and its code by hovering over the example box and clicking appropriate buttons. If you're using a mobile device the buttons should be visible at all times.
-                    <br>
-                    <br>
-                    I'm happy to produce a specific project upon request.
-                    </p>
+                <p>Here you can find my latest projects, which were created for a different
+                purposes. You can access completed projects
+                and its code by hovering over the example box and clicking appropriate buttons. If you're using a mobile device the buttons should be visible at all times.
+                <br>
+                <br>
+                I'm happy to produce a specific project upon request.
+                </p>
+                <div class="example" id="example6" style="background-image: url('./resources/images/circleclock.png');">
+                    <h3>Circlock</h3>
+                    <a class="button-example" id="butexa6-1" target="_blank" href="https://github.com/pino888/circleclock">Code</a>
+                    <a class="button-example" id="butexa6-2" target="_blank" href="https://pino888.github.io/circleclock/">Project</a>
                 </div>
-                <div class="contentboxright">
-                    <div class="example" id="example5">
-                        <h3>Moon Escape</h3>
-                        <a id="butexa5-1" target="_blank" href="https://github.com/pino888/moonescape">Code</a>
-                        <a target="_blank" id="butexa5-2" href="https://pino888.itch.io/moon-escape">Site</a>
-                    </div>
-                    <div class="example" id="example1">
-                        <h3>Dustron</h3>
-                        <a id="butexa1-1" target="_blank" href="https://github.com/pino888/dustron">Code</a>
-                        <a target="_blank" id="butexa1-2" href="https://pino888.github.io/dustron/">Site</a>
-                    </div>
-                    <div class="example" id="example2">
-                        <h3>Fortune Teller</h3>
-                        <a id="butexa2-1" target="_blank" href="https://github.com/pino888/fortuneteller">Code</a>
-                        <a target="_blank" id="butexa2-2" href="https://pino888.github.io/fortuneteller/">Site</a>
-                    </div>
-                    <div class="example" id="example4">
-                        <h3>Dish Picker</h3>
-                        <a id="butexa4-1" target="_blank" href="https://github.com/pino888/dishpicker">Code</a>
-                        <a target="_blank" id="butexa4-2" href="https://pino888.github.io/dishpicker/">Site</a>
-                    </div>
-                    <div class="example" id="example3">
-                        <h3>Cipher</h3>
-                        <a id="butexa3-1" target="_blank" href="https://github.com/pino888/cipherator">Code</a>
-                        <a target="_blank" id="butexa3-2" href="https://pino888.github.io/cipherator/">Site</a>
-                    </div>
+                <div class="example" id="example5" style="background-image: url('./resources/images/moon-escape.png');">
+                    <h3>Moon Escape</h3>
+                    <a class="button-example" id="butexa5-1" target="_blank" href="https://github.com/pino888/moonescape">Code</a>
+                    <a class="button-example" id="butexa5-2" target="_blank" href="https://pino888.itch.io/moon-escape">Project</a>
+                </div>
+                <div class="example" id="example1" style="background-image: url('./resources/images/dustron.PNG');">
+                    <h3>Dustron</h3>
+                    <a class="button-example" id="butexa1-1" target="_blank" href="https://github.com/pino888/dustron">Code</a>
+                    <a class="button-example" target="_blank" id="butexa1-2" href="https://pino888.github.io/dustron/">Project</a>
+                </div>
+                <div class="example" id="example2" style="background-image: url('./resources/images/fortune.PNG');">
+                    <h3>Fortune Teller</h3>
+                    <a class="button-example" id="butexa2-1" target="_blank" href="https://github.com/pino888/fortuneteller">Code</a>
+                    <a class="button-example" target="_blank" id="butexa2-2" href="https://pino888.github.io/fortuneteller/">Project</a>
+                </div>
+                <div class="example" id="example4" style="background-image: url('./resources/images/dishpicker.PNG');">
+                    <h3>Dish Picker</h3>
+                    <a class="button-example" id="butexa4-1" target="_blank" href="https://github.com/pino888/dishpicker">Code</a>
+                    <a class="button-example" target="_blank" id="butexa4-2" href="https://pino888.github.io/dishpicker/">Project</a>
+                </div>
+                <div class="example" id="example3" style="background-image: url('./resources/images/cipher.PNG');">
+                    <h3>Cipher</h3>
+                    <a class="button-example" id="butexa3-1" target="_blank" href="https://github.com/pino888/cipherator">Code</a>
+                    <a class="button-example" target="_blank" id="butexa3-2" href="https://pino888.github.io/cipherator/">Project</a>
                 </div>
             </div>
+            <h1>Contact me</h1>
             <div class="content" id="contact">
-                <h1>Contact me via email, GitHub or LinkedIn:</h1>
                 <h3>piotr.daniel4@gmail.com</h3>
                 <a href="https://github.com/pino888" target ="_blank" class="fa fa-github"><p>GitHub</p></a>
                 <a href="https://www.linkedin.com/in/piotr-daniel-874a83154/" target ="_blank" class="fa fa-linkedin"><p>LinkedIn</p></a>
-                <!--<form id="contactform" method="POST" action="../resources/scripts/contact.php">
-                    <label for="name">Name:</label><br>
-                    <input id="name" name="sender" type="text">
-                    <br>
-                    <label for="email">Email:</label><br>
-                    <input id="email" name="senderEmail" type="text" required>
-                    <br>
-                    <label for="message">Your message:</label><br>
-                    <textarea id="message" name="message" rows="10" cols="40" maxlength="500"></textarea>
-                    <br>
-                    <input type="submit" value="Send" id="formsubmit">
-                </form>-->
             </div>
         </main>
         <!--Footer-->

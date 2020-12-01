@@ -19,7 +19,6 @@ body {
 }
 
 /* Header and Nav styles */
-
 header {
     width: 100%;
     height: 60px;
@@ -55,6 +54,7 @@ header {
     border-radius: 5px;
     transition-duration: 0.2s;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .menu a:hover {
@@ -62,7 +62,6 @@ header {
 }
 
 /* Main section styles */
-
 main {
     display: flex;
     width: 100%;
@@ -72,64 +71,41 @@ main {
 }
 
 /* Each content section */
-
 .content {
     display: inline-flex;
-    align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    width: 90%;
-    min-height: 550px;
-    flex-direction: row;
-    padding-bottom: 1%;
+    text-align: center;
+    width: 80%;
+    padding: 1%;
     animation: fadeInLeft;
+    animation-duration: 1.5s;
+    background-color: hsl(359.4,87.2%,21.4%);
+    border-radius: 5px;
+    box-shadow: 5px 5px 6px;
+}
+
+h1 {
+    padding: 2%;
+    animation: fadeInRight;
     animation-duration: 1.5s;
 }
 
-.content h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 5%;
-    margin-top: 7%;
-}
-
-.contentboxright {
-    display: inline-flex;
-    width: 50%;
-    background-color: hsl(359.4,87.2%,21.4%);
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: justify;
-    border-radius: 0px 5px 5px 0px;
-}
-
-.contentboxright p {
-    padding: 5%;
-}
-
-.contentboxleft {
-    display: inline-flex;
-    width: 50%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    background-color: hsl(359.4,87.2%,21.4%);
-    border-radius: 5px 0px 0px 5px;
-    text-align: justify;
-}
-
-.contentboxleft p {
-    padding: 5%;
+.content p, .content p {
+    padding: 2%;
+    font-family: 'Baloo Tamna', 'Ubuntu', sans-serif;
 }
 
 #avatar {
     border-radius: 50%;
     border: 4px solid hsl(205.7,13.7%,10%);
-    width: 30%;
+    width: 10%;
     height: auto;
     animation: tada;
     animation-duration: 2.5s;
     animation-delay: 1.4s;
+    cursor: pointer;
 }
 
 /* Examples of my projects container and buttons */
@@ -142,6 +118,10 @@ main {
     justify-content: center;
     flex-flow: wrap;
     text-align: center;
+    box-shadow: 5px 5px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .example h3 {
@@ -154,7 +134,7 @@ main {
     border-radius: 5px 5px 0px 0px;
 }
 
-.contentboxright a {
+.content a {
     color: hsl(0,0%,82.7%);
     margin: 1%;
     border-radius: 5px;
@@ -162,15 +142,7 @@ main {
     text-decoration: none;
 }
 
-/* Example 1 - top left corner buttons and background */
-
-#example1 {
-    background-image: url('../images/dustron.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#butexa1-1 {
+.button-example {
     height: 50px;
     width: 90px;
     margin: 5px;
@@ -181,185 +153,11 @@ main {
     border-radius: 5px;
     border: 1px solid hsl(0,0%,82.7%);
     transition-duration: 0.2s;
+    align-items: center;
+    justify-content: center;
 }
 
-#butexa1-1:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#butexa1-2 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa1-2:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#example2 {
-    background-image: url("../images/fortune.PNG");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#butexa2-1 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa2-1:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#butexa2-2 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa2-2:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#example3 {
-    background-image: url('../images/cipher.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#butexa3-1 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa3-1:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#butexa3-2 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa3-2:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#example4 {
-    background-image: url('../images/dishpicker.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#butexa4-1 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa4-1:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#butexa4-2 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa4-2:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#example5 {
-    background-image: url('../images/moon-escape.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#butexa5-1 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa5-1:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
-#butexa5-2 {
-    height: 50px;
-    width: 90px;
-    margin: 5px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    display: none;
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#butexa5-2:hover {
+.button-example:hover {
     background-color: hsl(205.7,13.7%,10%);
 }
 
@@ -372,22 +170,6 @@ main {
     margin: 2%;
 }
 
-/* Form and submit button style */
-#formsubmit {
-    height: 50px;
-    min-width: 90px;
-    background-color: black;
-    opacity: 0.8;
-    color: hsl(0,0%,82.7%);
-    border-radius: 5px;
-    border: 1px solid hsl(0,0%,82.7%);
-    transition-duration: 0.2s;
-}
-
-#formsubmit:hover {
-    background-color: hsl(205.7,13.7%,10%);
-}
-
 /* Footer styles*/
 
 footer {
@@ -395,6 +177,7 @@ footer {
     width: 100%;
     display: flex;
     background-color: hsl(330,10%,3.9%);
+    margin-top: 15px;
 }
 
 .footleft {
@@ -416,12 +199,13 @@ footer {
     display: none;
     border-radius: 90px;
     width: auto;
-    height: 25px;
+    height: 20px;
     margin-right: 7px;
 }
 
 #miniavatarspeak {
     display: none;
+    font-size: 0.9rem;
 }
 
 .fa {
@@ -443,118 +227,18 @@ footer {
         width: 100%;
         justify-content: center;
     }
-    main {
-        padding-top: 0px;
-    }
     .content {
         flex-direction: column;
-        padding-top: 10%;
     }
-    .contentboxleft {
-        width: 100%;
-        padding-top: 3%;
-        border-radius: 5px 5px 0px 0px;
-        text-align: center;
+    #avatar {
+        width: 20%;
     }
-    .contentboxright {
-        width: 100%;
-        padding-bottom: 3%;
-        border-radius: 0px 0px 5px 5px;
-        text-align: center;
-    }
-    #butexa1-1 {
-        display: block;
-    }
-    #butexa1-2 {
-        display: block;
-    }
-    #butexa2-1 {
-        display: block;
-    }
-    #butexa2-2 {
-        display: block;
-    }
-    #butexa3-1 {
-        display: block;
-    }
-    #butexa3-2 {
-        display: block;
-    }
-    #butexa4-1 {
-        display: block;
-    }
-    #butexa4-2 {
-        display: block;
-    }
-    #butexa5-1 {
-        display: block;
-    }
-    #butexa5-2 {
-        display: block;
+    .button-example {
+        display: flex;
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-    .banner {
-        width: 30%;
-        font-size: 0.6rem;
-    }
-    .menu {
-        width: 71%;
-        justify-content: right;
-    }
-    main {
-        padding-top: 0px;
-    }
-    .content {
-        flex-direction: column;
-        padding-top: 10%;
-    }
-    .contentboxleft {
-        width: 100%;
-        padding-top: 3%;
-        border-radius: 5px 5px 0px 0px;
-        text-align: center;
-    }
-    .contentboxright {
-        width: 100%;
-        padding-bottom: 3%;
-        border-radius: 0px 0px 5px 5px;
-        text-align: center;
-    }
-    #butexa1-1 {
-        display: block;
-    }
-    #butexa1-2 {
-        display: block;
-    }
-    #butexa2-1 {
-        display: block;
-    }
-    #butexa2-2 {
-        display: block;
-    }
-    #butexa3-1 {
-        display: block;
-    }
-    #butexa3-2 {
-        display: block;
-    }
-    #butexa4-1 {
-        display: block;
-    }
-    #butexa4-2 {
-        display: block;
-    }
-    #butexa5-1 {
-        display: block;
-    }
-    #butexa5-2 {
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
     .banner {
         width: 29%;
         font-size: 0.6rem;
@@ -562,41 +246,8 @@ footer {
     .menu {
         width: 71%;
     }
-    main {
-        padding-top: 0px;
-    }
-    .contentboxleft {
-        flex-direction: column;
-    }
-    #butexa1-1 {
-        display: block;
-    }
-    #butexa1-2 {
-        display: block;
-    }
-    #butexa2-1 {
-        display: block;
-    }
-    #butexa2-2 {
-        display: block;
-    }
-    #butexa3-1 {
-        display: block;
-    }
-    #butexa3-2 {
-        display: block;
-    }
-    #butexa4-1 {
-        display: block;
-    }
-    #butexa4-2 {
-        display: block;
-    }
-    #butexa5-1 {
-        display: block;
-    }
-    #butexa5-2 {
-        display: block;
+    .button-example {
+        display: flex;
     }
     .footleft {
         width: 70%;
